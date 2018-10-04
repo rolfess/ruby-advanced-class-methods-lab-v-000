@@ -35,7 +35,7 @@ class Song
       end # of if
     end  # of do
     Song.create_by_name(name)
-  end  # of def 
+  end  # of def
 
   def Song.find_or_create_by_name(name)
     @@all.each do |song|
@@ -43,6 +43,6 @@ class Song
         return song
       end # of if
      end  # of do
-     
+
     end # of def
 end
