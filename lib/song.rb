@@ -34,7 +34,7 @@ class Song
         return song
       end # of if
     end  # of do
-    return false
+    return falsey
   end  # of def
 
   def Song.find_or_create_by_name(name)
