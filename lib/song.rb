@@ -38,6 +38,10 @@ class Song
   end  # of def
 
   def Song.find_or_create_by_name(name)
-   Song.find_by_name(name) || Song.create_by_name(name)
+    if 
+      Song.find_by_name(name) 
+    else 
+      Song.create_by_name(name)
+    end # of if
   end # of def
 end
