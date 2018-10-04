@@ -33,7 +33,7 @@ class Song
       if song.name == name
         return song
       end # of if
-    #  return false
     end  # of do
+    return false
   end  # of def Song.find_by_name
 end
