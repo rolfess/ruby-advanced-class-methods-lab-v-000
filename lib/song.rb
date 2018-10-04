@@ -38,11 +38,6 @@ class Song
   end  # of def
 
   def Song.find_or_create_by_name(name)
-    @@all.each do |song|
-      if song.name == name
-        return song
-      end # of if
-     end  # of do
-
-    end # of def
+   Song.find_by_name(name) || Song.create_by_name(name)
+  end # of def
 end
