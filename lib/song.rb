@@ -27,4 +27,12 @@ class Song
     song.name = name
     song
   end
+
+  def Song.find_by_name(name)
+    Song.each do |song|
+      if song.name == name
+        return song
+      end
+    end
+  end
 end
