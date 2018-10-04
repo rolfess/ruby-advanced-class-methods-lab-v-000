@@ -32,8 +32,8 @@ class Song
     @@all.each do |song|
       if song.name == name
         return song
-      end
+      end # of if
     #  return false
-    end
-  end
+    end  # of do
+  end  # of def Song.find_by_name
 end
